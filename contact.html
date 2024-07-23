@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AV School</title>
+    <link rel="icon" href="schl.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<style>
+    #photo {
+        height: 500px;
+        width: 100%;
+        top: 10px;
+        position: absolute;
+    }
+
+    .cont {
+        font-size: 40px;
+        position: absolute;
+        font-weight: bold;
+        left: 500px;
+        color: blueviolet;
+        top: 550px;
+    }
+
+    .contpara {
+        text-align: center;
+        top: 600px;
+        position: absolute;
+        left: 300px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        height: 500px;
+        width: 80%;
+        max-width: 600px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        left: 20px;
+        margin-top: 170px;
+    }
+
+    h1 {
+        text-align: center;
+        color: yellow;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    input:hover {
+        background-color: rgb(113, 237, 130);
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: blue;
+    }
+
+    #demo {
+        margin-top: 80px;
+        margin-left: 100px;
+        border-radius: 20px;
+    }
+
+    .adres {
+        height: 400px;
+        width: 80%;
+        margin-left: 630px;
+        border-radius: 20px;
+        background: linear-gradient(white, rgb(101, 101, 227));
+        margin-top: -800px;
+
+    }
+
+    .loc {
+        margin-left: 80px;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .mob {
+        margin-left: 120px;
+    }
+
+    .mob:hover {
+        color: blue;
+    }
+
+    .e {
+        margin-left: 120px;
+    }
+
+    .e:hover {
+        color: red;
+    }
+
+    .fo{
+        height: 500px;
+        width: 100%;
+        box-shadow: 1px 1px 1px 1px whitesmoke;
+        /* position:relative; */
+      background: linear-gradient(pink,skyblue);
+        margin-top: 500px;
+    }
+    #fopic{
+        margin-top: 180px;
+        margin-left: 80px;
+    }
+    .fopara{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .soc{
+        margin-top: 30px;
+        margin-left: 80px;
+        font-size: 30px;
+        cursor: pointer;
+        color: blue;
+    }
+    .sol{
+        margin-left: 500px;
+        margin-top: -250px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .p,.p2,.p3{
+        margin-left: 500px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .p:hover{
+        color:red;
+    }
+    .p2:hover{
+        color:red;
+    }
+    .p3:hover{
+        color:red;
+    }
+    .cell{
+        margin-left: 900px;
+        margin-top: -150px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .contact{
+    
+        margin-left: 880px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .mail{
+        margin-left: 880px;
+        margin-top: -20px;
+        cursor: pointer;
+    }
+    .mail:hover{
+        color: blue;
+    }
+    .ww{
+        margin-left: 880px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .ww:hover{
+        color: rgb(242, 10, 157);
+    }
+    #copy{
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    .ryt{
+        margin-top: -20px;
+        margin-left: 80px;
+    }
+    .fotbox{
+        width: 100%;
+        height: 30px;
+        background: pink;
+        margin-top: 100px;
+    
+    }
+    
+</style>
+
+<body>
+
+    <section id="home">
+
+        <nav>
+            <div class="logo">
+                <img src="schl.jpeg" width="100vh">
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="solutions.html">SOLUTIONS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <ul>
+                <li></li>
+                <a href="login.html"><button class="login_btn">Login</button></a>
+                </li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </section>
+    <div class="contactpic">
+        <img src="pexels-jeshoots-4831.jpg" alt="" id="photo">
+        <br>
+        <br>
+        <p class="cont">Contact</p>
+        <p class="contpara">Whether you're looking for Classroom Solutions, Home Learning <br> Solutions or to Digitize
+            School Operations, we can help. Reach out to Us <br> for a Demo or Custom Quote.</p>
+    </div>
+    <div class="container">
+        <h1>CONTACT US</h1>
+        <form action="/submit-form" method="POST">
+            <label for="candidateName">Your Name:</label>
+            <input type="text" id="candidateName" name="candidateName" required>
+
+            <label for="schoolName"> Your School Name:</label>
+            <input type="text" id="schoolName" name="schoolName" required>
+
+            <label for="schoolLocation"> Your School Location:</label>
+            <input type="text" id="schoolLocation" name="schoolLocation" required>
+
+            <label for="services">Services Interested In:</label>
+            <select id="services" name="services">
+                <option value="academic">classroom solutions</option>
+                <option value="sports">Home Learning solutions</option>
+                <option value="arts">Fee Management</option>
+                <option value="technology">Transport Management</option>
+                <option value="technology">Parent communication portal</option>
+                <option value="technology">Report card Management</option>
+            </select>
+
+            <label for="email"> Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber"> Your Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <button class="btn btn-primary" id="demo">Book a Demo</button>
+        <div class="adres">
+
+            <p class="loc"> <i class="fa-solid fa-location-dot"></i>Tangsys Technologies Pvt Ltd, <br>
+                1585, 4th Floor, 20th Main Rd, Agara <br> Village, <br>
+                1st Sector, HSR Layout, Bengaluru, <br>
+                Karnataka 560102
+            </p>
+            <br>
+            <br>
+            <p class="mob">
+                <i class="fa-brands fa-square-whatsapp"></i>
+                +91 23465 87578 <br>
+                <br>
+                <i class="fa-solid fa-phone-volume"></i>
+                +91 56534 53667
+            </p>
+            <br>
+            <br>
+
+            <p class="e"> <i class="fa-solid fa-envelope"></i>Av School@gmail.com
+
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="fo">
+            <img src="schl.jpeg" width="100vh" id="fopic">
+            <p class="fopara">We are a technology company <br> committed to helping schools <br> deliver exceptional
+                learning <br> outcomes through innovative <br> and customizable solutions.</p>
+            <div class="soc">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <p class="sol">Solutions</p>
+            <div class="p">
+                classroom solutions <br>
+                <br>
+            </div>
+            <div class="p2">
+                home learning solutions <br>
+                <br>
+            </div>
+            <div class="p3">
+                school Management solutions
+            </div>
+            <p class="cell">Contact</p>
+            <div class="contact">
+                +91-809 589 3456 <br>
+                <br>
+                +91- 789 564 2345 <br>
+                <br>
+                <br>
+            </div>
+            <div class="mail">
+                AVschool@gmail.com <br>
+                <br>
+            </div>
+            <div class="ww">
+                www.AVschool.com
+            </div>
+            <div class="fotbox">
+                <i class="fa-regular fa-copyright" id="copy"></i>
+                <p class="ryt">copyrights 2024 AV school</p>
+            </div>
+
+    </footer>
+
+</body>
+
+</html>
